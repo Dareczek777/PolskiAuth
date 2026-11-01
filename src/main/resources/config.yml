@@ -1,0 +1,10 @@
+# PolskiAuth - konfiguracja
+# Paper 1.21.4
+
+settings:
+  login-timeout: 60
+  min-password-length: 5
+  max-password-length: 64
+
+messages:
+  prefix: "&8[&6Anarchia&8] &7"
