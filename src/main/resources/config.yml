@@ -1,10 +1,44 @@
-# PolskiAuth - konfiguracja
-# Paper 1.21.4
+# PolskiAuth - wszystkie napisy i ustawienia możesz zmieniać tutaj.
+# Kolory Minecraft: &a zielony, &c czerwony, &6 złoty, &e żółty, &7 szary.
 
 settings:
   login-timeout: 60
   min-password-length: 5
   max-password-length: 64
 
+bossbar:
+  text: '&6Czas na zalogowanie: &e{seconds}s'
+
+titles:
+  registered: '&6&lTWOJ SERWER'
+  registered-subtitle: '&eZaloguj się: &a/l <hasło>'
+  unregistered: '&6&lTWOJ SERWER'
+  unregistered-subtitle: '&eZarejestruj się: &a/reg <hasło> <powtórz>'
+  success: '&aZALOGOWANO'
+  success-subtitle: '&7Miłej gry!'
+  warning: '&cZALOGUJ SIĘ!'
+  warning-subtitle: '&7Pozostało &e{seconds} sekund'
+
 messages:
-  prefix: "&8[&6Anarchia&8] &7"
+  prefix: '&8[&6TWOJ SERWER&8] &7'
+  welcome-registered: '&eWitaj ponownie! &7Zaloguj się komendą &a/l <hasło>'
+  welcome-new: '&eWitaj! &7Zarejestruj konto: &a/reg <hasło> <powtórz hasło>'
+  login-success: '&aZostałeś pomyślnie zalogowany!'
+  already-registered: '&cMasz już konto. Użyj &e/l <hasło>&c.'
+  register-usage: '&cUżycie: &e/reg <hasło> <powtórz hasło>'
+  passwords-different: '&cPodane hasła nie są takie same.'
+  password-length: '&cHasło musi mieć od {min} do {max} znaków.'
+  register-error: '&cWystąpił błąd podczas rejestracji. Spróbuj ponownie.'
+  not-registered: '&cNie masz konta. Użyj &e/reg <hasło> <powtórz hasło>&c.'
+  already-logged: '&aJesteś już zalogowany.'
+  login-usage: '&cUżycie: &e/l <hasło>'
+  wrong-password: '&cNieprawidłowe hasło!'
+  must-login: '&cNajpierw musisz się zalogować.'
+  change-usage: '&cUżycie: &e/zmienhaslo <stare> <nowe>'
+  old-password-wrong: '&cStare hasło jest nieprawidłowe.'
+  password-changed: '&aHasło zostało zmienione.'
+  change-error: '&cNie udało się zmienić hasła.'
+  must-login-chat: '&cNajpierw się zaloguj lub zarejestruj.'
+  commands-blocked: '&cPrzed zalogowaniem możesz używać tylko &e/reg &ci &e/l&c.'
+  player-only: '&cTa komenda jest tylko dla gracza.'
+  kick-timeout: '&cNie zalogowałeś się w wyznaczonym czasie!\n&7Połącz się ponownie i zaloguj.'
