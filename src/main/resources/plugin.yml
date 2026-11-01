@@ -1,0 +1,19 @@
+name: PolskiAuth
+version: 1.0.0
+main: pl.polski.auth.PolskiAuth
+api-version: '1.21'
+author: ChatGPT
+description: Polski system rejestracji i logowania
+commands:
+  register:
+    description: Rejestracja konta
+    aliases: [reg, zarejestruj]
+    usage: /reg <hasło> <powtórz hasło>
+  login:
+    description: Logowanie na konto
+    aliases: [l, zaloguj]
+    usage: /l <hasło>
+  changepassword:
+    description: Zmiana hasła
+    aliases: [zmienhaslo]
+    usage: /zmienhaslo <stare> <nowe>
