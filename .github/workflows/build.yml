@@ -1,0 +1,30 @@
+
+name: Build PolskiAuth
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Pobierz kod
+        uses: actions/checkout@v4
+
+      - name: Skonfiguruj Javę 21
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+          cache: maven
+
+      - name: Zbuduj plugin
+        run: mvn clean package
+
+      - name: Udostępnij plik JAR
+        uses: actions/upload-artifact@v4
+        with:
+          name: PolskiAuth-Paper-1.21.4
+          path: target/PolskiAuth-1.0.0.jar
